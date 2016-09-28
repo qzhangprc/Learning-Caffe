@@ -11,7 +11,7 @@
 
 ##步骤
 
-Ubuntu16.04配置
+###Ubuntu16.04配置
 
 - 修改Ubuntu的软件更新源，添加清华大学源：
 
@@ -20,7 +20,7 @@ Ubuntu16.04配置
 - 修改系统语言为汉语；修改系统的输入法框架；添加拼音输入法
 - 采用软件更新器更新系统。
 
-Nvidia显卡驱动安装
+###Nvidia显卡驱动安装
 
 - 添加Nvidia驱动的ppa源
 
@@ -30,7 +30,7 @@ Nvidia显卡驱动安装
 - 在软件更新器中更新驱动
 - 重启
 
-CUDA 配置
+###CUDA 配置
 
 - 下载CUDA8.0 RC和 CUDA Patch两个文件
 - 安装CUDA8.0 RC 和 CUDA Patch
@@ -42,7 +42,7 @@ CUDA 配置
 >   	用软件管理器安装CUDA Patch
 >   	重启
 
-cuDNN 5.1 配置
+###cuDNN 5.1 配置
 
 - 配置头文件
 >   		sudo cp cudnn.h /usr/local/cuda/include/
@@ -64,5 +64,5 @@ cuDNN 5.1 配置
 >   	cp /usr/local/cuda/samples
 >   	sudo make all –j8
 
-To be continue
+###To be continue
 
