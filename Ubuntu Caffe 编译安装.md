@@ -35,21 +35,21 @@
 - 下载CUDA8.0 RC和 CUDA Patch两个文件
 - 安装CUDA8.0 RC 和 CUDA Patch
 
->   	sudo dpkg -i cuda-repo-ubuntu1604-8-0-rc_8.0.27-1_amd.deb
->   	sudo apt-get update
->   	sudo apt-get install cuda
->  		重启
->   	用软件管理器安装CUDA Patch
->   	重启
+>		sudo dpkg -i cuda-repo-ubuntu1604-8-0-rc_8.0.27-1_amd.deb
+>		sudo apt-get update
+>		sudo apt-get install cuda
+>		重启
+>		用软件管理器安装CUDA Patch
+>		重启
 
 ###cuDNN 5.1 配置
 
 - 配置头文件
->   		sudo cp cudnn.h /usr/local/cuda/include/
+>sudo cp cudnn.h /usr/local/cuda/include/
 - 配置动态链接库
 
->   	sudo cp lib* /usr/local/cuda/lib64
->   	cd /usr/local/cuda/lib64
+>		sudo cp lib* /usr/local/cuda/lib64
+>		cd /usr/local/cuda/lib64
 >   	sudo rm -rf libcudnn.so libcudnn.so.5    #删除原有动态文件
 >   	sudo ln -s libcudnn.so.5.0.5 libcudnn.so.5
 >   	sudo ln -s libcudnn.so.5 libcudnn.so
