@@ -1,5 +1,3 @@
-
-
 #Ubuntu 16.04下Caffe的编译安装
 --
 
@@ -14,6 +12,7 @@
 ##步骤
 
 1. Ubuntu16.04配置
+
 - 修改Ubuntu的软件更新源，添加清华大学源：
 
 >https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/  
@@ -22,6 +21,7 @@
 - 采用软件更新器更新系统。
 
 2. Nvidia显卡驱动安装
+
 - 添加Nvidia驱动的ppa源
 
 >		sudo add-apt-repository ppa:graphics-drivers/ppa
@@ -29,6 +29,7 @@
 
 - 在软件更新器中更新驱动
 - 重启
+
 3. CUDA 配置
 
 - 下载CUDA8.0 RC和 CUDA Patch两个文件
@@ -42,6 +43,7 @@
 >   	重启
 
 4. cuDNN 5.1 配置
+
 - 配置头文件
 >   		sudo cp cudnn.h /usr/local/cuda/include/
 - 配置动态链接库
